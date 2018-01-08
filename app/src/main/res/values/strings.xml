@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Text-To-Speech-Translate</string>
+    <string name="unsupported_language">A linguagem atual do seu sistema não é suportada</string>
+    <string name="supported_language">A linguagem atual do seu sistema é suportada!</string>
+    <string name="tts_initialization_failure">Erro ao inicializar o serviço de voz.</string>
+    <string name="speak">Falar</string>
+    <string name="translate">Traduzir</string>
+    <string name="translated_text">Texto Traduzido</string>
+</resources>

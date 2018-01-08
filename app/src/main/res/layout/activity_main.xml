@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_activity_background"
+    tools:context="com.pereira.fabio.text_to_speech_example.MainActivity"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:text="Text to Speech Example"
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mic_white_48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:text="Digite um texto no campo abaixo e pressione o botão falar, o aplicativo irá falar o que você digitou"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <EditText
+            android:id="@+id/text_to_speak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o texto aqui"
+            android:textColorHint="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:singleLine="true"/>
+
+        <Button
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:id="@+id/speak_button"
+            android:text="@string/speak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:id="@+id/translate_button"
+            android:text="@string/translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/translated_text"
+            android:text="@string/translated_text"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
